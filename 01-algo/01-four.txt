@@ -1,0 +1,39 @@
+
+P3 est vraie si P1 est vraie OU si P2 est vraie.
+
+
+# VARIABLES 
+
+TEMPÉRATURE EST UN ENTIER
+TEMPS EST UN ENTIER
+P1 EST UN BOOLÉEN
+P2 EST UN BOOLÉEN
+P3 EST UN BOOLÉEN
+
+# DEBUT PROGRAMME
+
+ECRIRE "entrez la température voulue"
+
+LIRE TEMPÉRATURE
+
+ECRIRE "entrez le temps prévu" 
+
+LIRE TEMPS 
+
+P1 <-- FAUX
+P2 := VRAI 
+
+SI P1 EST VRAI OU SI P2 EST VRAI 
+ALORS
+    P3 <-- VRAI 
+SINON
+    P3 <-- FAUX
+FIN SI
+
+SI P3 EST VRAI 
+ALORS 
+    ECRIRE "Le four s'arrête"
+FIN SI
+
+# FIN PROGRAMME
+
