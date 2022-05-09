@@ -1,0 +1,80 @@
+S’il fait beau demain, 
+
+j’irai faire une balade à bicyclette.
+
+Je n’ai pas utilisé ma bicyclette depuis plusieurs mois, 
+peut-être n’est-elle plus en parfait état de fonctionnement.
+
+Si c’est le cas, je passerai chez le garagiste avant la balade. 
+J’espère que les réparations seront immédiates 
+sinon je devrai renoncer à la balade en bicyclette.
+ Comme je veux de toute façon profiter du beau temps, 
+ si mon vélo n’est pas utilisable, 
+ j’irai à pied jusqu’à l’étang pour cueillir les joncs.
+
+---
+
+S’il ne fait pas beau, je consacrerai ma journée à la lecture. 
+J’aimerais relire le 1er tome de Game of Thrones. 
+Je pense posséder ce livre, il doit être dans la bibliothèque du salon.
+
+Si je ne le retrouve pas, j’irai l’emprunter à la bibliothèque municipale. 
+Si le livre n’est pas disponible, j’emprunterai un roman policier.
+
+Je rentrerai ensuite directement à la maison.
+
+Dès que j’aurai le livre qui me convient, 
+je m’installerai confortablement dans un fauteuil et je me plongerai dans la lecture.
+
+
+# VARIABLES 
+
+Booléen il_fait_beau
+Booléen bon_etat_bicyclette 
+Booléen reparations_immediates
+Booléen livre_dans_le_salon 
+Booléen livre_disponible_bibliotheque
+
+# DEBUT PROGRAMMME
+
+ECRIRE "Fera-t-il beau demain ?"
+LIRE il_fait_beau
+
+SI il_fait_beau 
+ALORS
+
+    ECRIRE "Bicyclette en bon état ?"
+    LIRE bon_etat_bicyclette
+
+    SI bon_etat_bicyclette EST FAUX
+    ALORS
+        ECRIRE "Aller chez le garagiste, les réparations sont-elles immédiates ?"
+        LIRE reparations_immediates
+
+        SI reparations_immediates EST FAUX
+        ALORS
+            ECRIRE "Renoncer à la bicyclette, Aller cueillir des Joncs" // FIN PROGRAMME
+        SINON
+            ECRIRE "Ballade à bicyclette"
+        FIN SI
+    SINON 
+        ECRIRE "Ballade à bicyclette"
+    FIN SI
+        
+
+
+FIN SI
+
+SINON 
+
+
+
+FIN SI
+
+# FIN PROGRAMME
+
+
+# FONCTIONS 
+
+
+
