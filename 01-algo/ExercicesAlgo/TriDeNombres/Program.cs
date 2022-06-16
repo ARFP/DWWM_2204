@@ -10,6 +10,7 @@ Console.WriteLine("Saisissez un deuxième nombre entier");
 b = int.Parse(Console.ReadLine());
 Console.WriteLine ("Saisissez un troisième nombre entier");
 c = int.Parse(Console.ReadLine());
+
 if (a > b)
 {
     if (b >= c)
