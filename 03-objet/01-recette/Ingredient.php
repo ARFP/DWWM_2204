@@ -8,7 +8,7 @@ class Ingredient
     /** @var string $nom Le nom de l'ingrédient */
     private string $nom;
 
-    /** @var float $quantite Ma quantité de l'ingrédient dans la recette */7
+    /** @var float $quantite Ma quantité de l'ingrédient dans la recette */
     private float $quantite;
 
     /** @var string $uniteDeMesure l'unité de mesure utilisée pour la quantité
