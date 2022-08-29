@@ -14,5 +14,6 @@ class Bee extends Animal
         echo $this->species . ' flies ' . PHP_EOL;
     }
   
+    
 }
 
