@@ -22,6 +22,13 @@ CREATE TABLE people
 	person_birthdate DATE NOT NULL,
 	person_hiredate DATE NULL,
 	person_active BOOLEAN NOT NULL,
-	role_id INT NOT NULL,
+	person_role_id INT NOT NULL,
 	PRIMARY KEY(person_id)
+	-- ,FOREIGN KEY (person_role_id) REFERENCES roles(role_id)
 );
+
+-- ALTER TABLE people 
+--	ADD FOREIGN KEY (person_role_id) REFERENCES roles(role_id);
+	
+ALTER TABLE people 
+	ADD CONSTRAINT fk_people_role_id FOREIGN KEY (person_role_id) REFERENCES roles(role_id);

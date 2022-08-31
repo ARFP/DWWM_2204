@@ -11,7 +11,7 @@ VALUES
 
 
 INSERT INTO people 
-(person_id, person_firstname, person_lastname, person_birthdate, person_hiredate, person_active, role_id)
+(person_id, person_firstname, person_lastname, person_birthdate, person_hiredate, person_active, person_role_id)
 VALUES 
 (1, 'Mike', 'DEV', '1980-02-23', '2017-08-27', true, 1),
 (2, 'Jean', 'Aymar', '1973-12-17', NULL, true, 3),
@@ -25,4 +25,8 @@ VALUES
 (10, 'Lorenzo', 'Lamas', '1981-04-24', NULL, true, 5),
 (11, 'Mustapha', 'M', '1990-06-11', NULL, true, 5),
 (12, 'Toto', 'Titi', '1987-08-09', NULL, true, 5);
+
+
+UPDATE people SET person_lastname='DEVOL' WHERE person_id=1;
+
 
