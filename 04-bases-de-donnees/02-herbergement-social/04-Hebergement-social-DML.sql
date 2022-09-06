@@ -10,7 +10,8 @@ VALUES
 (4, 'technicien'),
 (5, 'éducateur'),
 (6, 'médecin'),
-(7, 'directeur');
+(7, 'directeur'),
+(99, 'toto');
 
 
 INSERT INTO people 

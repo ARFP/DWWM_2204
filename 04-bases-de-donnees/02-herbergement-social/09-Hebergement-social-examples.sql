@@ -29,8 +29,6 @@ WHERE role_id <> 1
 -- Sélectionner, l'identifiant de la personne, l'identifiant du role, le nom et prénom de la personne
 -- à partir de la table "people" où le nom du rôle est différent de 'directeur'
 
-
-
 SELECT role_name FROM roles 
 WHERE 
 role_name = 'cuisinier' OR 
