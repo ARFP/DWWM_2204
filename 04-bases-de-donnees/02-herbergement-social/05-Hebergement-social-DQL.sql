@@ -17,20 +17,20 @@ GROUP BY (roles.role_id);
 
 /* VERSION 2 */
 
--- Sélectionner tous les résidents actifs du plus jeune au plus âgé
+-- 1 Sélectionner tous les résidents actifs du plus jeune au plus âgé
 
 
--- Sélectionner tous les résidents suivis par un médecin avec nom et prénom du médecin attitré
+-- 2 Sélectionner tous les résidents suivis par un médecin avec nom et prénom du médecin attitré
 
 
--- Sélectionner tous les médecins avec le nom de résidents qu'ils suivent.
+-- 3 Sélectionner tous les médecins avec le nombre de résidents qu'ils suivent.
 
 
 
 /* VERSION 3 */
 
--- Sélectionner les activités en cours.
--- Sélectionner les activités dont le nombre d’inscriptions a atteint le maximum.
--- Sélectionner les activités dont le nombre d’inscriptions est inférieur au minimum requis.
--- Sélectionner les activités dont le nombre de places disponibles est inférieur au quart du maximum.
--- Sélectionner les activités futures avec le nombre d’inscrits par activité.
+-- 4 Sélectionner les activités en cours.
+-- 5 Sélectionner les activités dont le nombre d’inscriptions a atteint le maximum.
+-- 5 Sélectionner les activités dont le nombre d’inscriptions est inférieur au minimum requis.
+-- 6 Sélectionner les activités dont le nombre de places disponibles est inférieur au quart du maximum.
+-- 7 Sélectionner les activités futures avec le nombre d’inscrits par activité.
