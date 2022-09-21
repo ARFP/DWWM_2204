@@ -69,4 +69,5 @@ VALUES
 INSERT INTO events 
 (event_id, event_date, event_start, event_end, event_cap_min, event_cap_max, activity_id, person_id)
 VALUES
-(1, '2022-09-10', '09:00:00', '11:00:00', 3, 20, 1, 11);
+(1, '2022-09-21', '09:00:00', '21:00:00', 3, 20, 1, 11);
+
