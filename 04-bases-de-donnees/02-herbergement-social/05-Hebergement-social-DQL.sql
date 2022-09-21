@@ -31,6 +31,6 @@ GROUP BY (roles.role_id);
 
 -- 4 Sélectionner les activités en cours.
 -- 5 Sélectionner les activités dont le nombre d’inscriptions a atteint le maximum.
--- 5 Sélectionner les activités dont le nombre d’inscriptions est inférieur au minimum requis.
--- 6 Sélectionner les activités dont le nombre de places disponibles est inférieur au quart du maximum.
--- 7 Sélectionner les activités futures avec le nombre d’inscrits par activité.
+-- 6 Sélectionner les activités dont le nombre d’inscriptions est inférieur au minimum requis.
+-- 7 Sélectionner les activités dont le nombre de places disponibles est inférieur au quart du maximum.
+-- 8 Sélectionner les activités futures avec le nombre d’inscrits par activité.
