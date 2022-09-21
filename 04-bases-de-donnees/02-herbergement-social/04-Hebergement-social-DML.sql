@@ -56,3 +56,17 @@ VALUES
 ('20', '2022-09-02 08:29:00', NULL, NULL),
 ('21', '2022-09-03 09:17:00', NULL, 7),
 ('22', '2022-09-03 15:15:00', NULL, 8);
+
+INSERT INTO activities 
+(activity_id, activity_label)
+VALUES
+(1, 'séance de sport'), -- 1
+(2, 'soirée jeux vidéos'), -- 2
+(3, 'sortie cinéma'), -- 3
+(4, 'ateleir théatre'), -- 4
+(5, 'atelier CV'); -- 5
+
+INSERT INTO events 
+(event_id, event_date, event_start, event_end, event_cap_min, event_cap_max, activity_id, person_id)
+VALUES
+(1, '2022-09-10', '09:00:00', '11:00:00', 3, 20, 1, 11);

@@ -1,6 +1,6 @@
+/* VERSION 1 */ 
 
--- Sélectionner tous les éducateurs.
--- role educateur = 5
+-- Sélectionner tous les éducateurs. (role educateur = 5)
 SELECT person_lastname, person_firstname FROM people WHERE person_role_id = 5;
 
 -- Sélectionner tous les employés autre que le directeur.
@@ -9,27 +9,28 @@ SELECT person_id, person_lastname, person_firstname FROM people WHERE person_rol
 -- Sélectionner toutes les personnes triées par rôle puis par nom.
 SELECT * FROM people ORDER BY person_role_id ASC, person_lastname ASC;
 
-
 -- Sélectionner tous les rôles avec le nombre de personnes associées à chaque rôle.
-
 SELECT * FROM roles;
-SELECT COUNT(*) FROM people WHERE person_role_id = 5;
-/*
-EXPLAIN SELECT 
-role_id, 
-role_name,
-(SELECT COUNT(*) FROM people WHERE person_role_id = role_id) as nb
-FROM roles;
-*/
+SELECT roles.role_id, roles.role_name, COUNT(people.*) 
+FROM roles JOIN people ON roles.role_id = people.person_role_id
+GROUP BY (roles.role_id);
 
-SELECT * FROM people, roles
-WHERE person_role_id = role_id
-ORDER BY person_id ASC, role_id ASC;
+/* VERSION 2 */
+
+-- Sélectionner tous les résidents actifs du plus jeune au plus âgé
 
 
-SELECT 
-*
-FROM people JOIN roles ON person_role_id = role_id
-ORDER BY person_id ASC, role_id ASC;
+-- Sélectionner tous les résidents suivis par un médecin avec nom et prénom du médecin attitré
 
 
+-- Sélectionner tous les médecins avec le nom de résidents qu'ils suivent.
+
+
+
+/* VERSION 3 */
+
+-- Sélectionner les activités en cours.
+-- Sélectionner les activités dont le nombre d’inscriptions a atteint le maximum.
+-- Sélectionner les activités dont le nombre d’inscriptions est inférieur au minimum requis.
+-- Sélectionner les activités dont le nombre de places disponibles est inférieur au quart du maximum.
+-- Sélectionner les activités futures avec le nombre d’inscrits par activité.
