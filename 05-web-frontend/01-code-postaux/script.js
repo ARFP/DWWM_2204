@@ -45,7 +45,7 @@ btn.addEventListener("click", function()
     /**
      * Recherher toutes les villes dont le nom contient "valeurARechercher"
      */
-    if(valeurAChercher === ville.codePostal || valeurAChercher === ville.nomCommune) {
+    if(valeurAChercher === ville.codePostal) {
         console.log(ville.nomCommune + " " + ville.codePostal);
     }
    }
