@@ -17,7 +17,18 @@ class CodePostaux
 
     rechercherParCodePostal(valeurARechercher)
     {
-        // valeur à rechercher
+        for(let ville of this.json)
+        {
+            if(valeurARechercher === ville.codePostal) {
+                this.resultats.push(ville);
+            }
+        }
+
+        this.json.forEach((ville) => {
+            if(valeurARechercher === ville.codePostal) {
+
+            }
+        })
     }
 
     rechercherParNom()
