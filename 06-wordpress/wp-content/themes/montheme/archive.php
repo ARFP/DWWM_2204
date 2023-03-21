@@ -1,11 +1,10 @@
 <?php get_header(); ?>
 
 <!-- partie centrale du thème (partie dynamique) --> 
-<!-- index.php = interface par défaut du thème -->
+<!-- archive.php = lister des articles -->
 
 <main>
-    <h1>index.php</h1>
-
+    <h1>archive.php</h1>
     <?php
     if (have_posts()) :    
         while (have_posts()) : the_post(); 
@@ -16,9 +15,9 @@
                 <h1>
                     <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                 </h1>                    
-                <aside>                        
-                    <span><?php the_date(); ?></span>                        
-                    <span><?php the_author(); ?> </span>                    
+                <aside>                     
+                    <span>écrit par <?php the_author(); ?> </span>                          
+                    <span>le <?php the_date(); ?></span>                     
                 </aside>                
             </header>                
             <section>                

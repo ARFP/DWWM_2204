@@ -1,3 +1,94 @@
 /* 
 Theme Name: Mon super Theme du CRM
 */
+
+@font-face {
+    font-family: 'toto';
+    src: url('./OpenDyslexic-Regular.otf');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+   font-size: 62.5%; /* 16px * 62.5 / 100 = 10px */
+}
+
+body { 
+    margin: 0;
+    padding: 0;
+    font-size: 1.6rem;
+    background-color: white;
+    color: #333;
+    /*font-family: Arial, Helvetica, sans-serif;*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: darkblue;
+}
+
+.header {
+    font-size: 3rem;
+    text-transform: uppercase;
+    background-color: black;
+    color: white;
+}
+
+.logo {
+    vertical-align: middle;
+}
+
+main {
+    width: 1200px;
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* FOOTER */
+.footer {
+    margin-top: 5rem;
+    padding: 2rem;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+/* ARCHIVE.PHP */
+
+.archive article {
+    color: blue;
+    border: 1px solid currentColor;
+    margin-top: 2rem;
+}
+
+.archive article h1 {
+    margin:0;
+    padding: 1rem;
+    border-bottom: 1px solid currentColor;
+    text-transform: uppercase;
+    background-color: darkblue;
+    color: white;
+}
+
+.archive article aside {
+    background-color: gray;
+    color: white;
+    font-size: 1.4rem;
+    padding: 2px;
+}
+
+.archive article section {
+    padding: 3px;
+}
+

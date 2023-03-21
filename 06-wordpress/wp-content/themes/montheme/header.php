@@ -1,14 +1,20 @@
 <!-- Entête du thème -->
 <!DOCTYPE html>
-<html lang="en">
+<html <?php language_attributes(); ?>>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <?php wp_head(); ?>
+    <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
+    <!-- <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css"> -->
 </head>
-<body>
+<body <?php body_class(); ?>>
 
-<header>
-    <h1>Mon titre</h1>
+<?php wp_body_open(); ?>
+
+<header class="header">
+    <a href="<?php echo home_url('/'); ?>">
+        <img class="logo" src="<?php echo get_template_directory_uri(); ?>/images/logo.svg" alt="Logo">
+        <?php bloginfo('name'); ?>
+    </a>
 </header>

@@ -1,11 +1,10 @@
 <?php get_header(); ?>
 
 <!-- partie centrale du thème (partie dynamique) --> 
-<!-- index.php = interface par défaut du thème -->
+<!-- single.php = afficher le contenu d'un article -->
 
 <main>
-    <h1>index.php</h1>
-
+    <h1>single.php</h1>
     <?php
     if (have_posts()) :    
         while (have_posts()) : the_post(); 

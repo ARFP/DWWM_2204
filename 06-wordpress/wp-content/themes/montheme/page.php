@@ -1,11 +1,10 @@
 <?php get_header(); ?>
 
 <!-- partie centrale du thème (partie dynamique) --> 
-<!-- index.php = interface par défaut du thème -->
+<!-- single.php = afficher le contenu d'un article -->
 
 <main>
-    <h1>index.php</h1>
-
+    <h1>page.php</h1>
     <?php
     if (have_posts()) :    
         while (have_posts()) : the_post(); 
@@ -24,10 +23,7 @@
             <section>                
                 <?php the_content(); ?>                
             </section>            
-            <footer>                
-                <span><?php the_category(); ?></span>                
-                <span><?php the_tags(); ?></span>            
-            </footer>            
+        
         </article>        
     <?php    
         endwhile;
