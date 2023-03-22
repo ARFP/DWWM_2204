@@ -16,7 +16,7 @@
                     <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                 </h1>                    
                 <aside>                     
-                    <span>écrit par <?php the_author(); ?> </span>                          
+                    <span>écrit par <?php the_author_posts_link(); ?> </span>                          
                     <span>le <?php the_date(); ?></span>                     
                 </aside>                
             </header>                
@@ -24,7 +24,7 @@
                 <?php the_content(); ?>                
             </section>            
             <footer>                
-                <span><?php the_category(); ?></span>                
+                <span style="display: flex;">Catégorie(s) : <?php the_category(); ?></span>                
                 <span><?php the_tags(); ?></span>            
             </footer>            
         </article>        
